@@ -13,6 +13,9 @@
     }
   ],
   "require": {
+    "barryvdh/laravel-ide-helper": "^2.4",
+    "doctrine/dbal": "^2.8",
+    "laravelista/lumen-vendor-publish": "^2.1",
     "yunhantech/laravel-db-doc": "^1.0",
     "yunhantech/swagger-lumen-yaml": "^1.0"
   },
