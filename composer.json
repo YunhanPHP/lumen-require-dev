@@ -24,15 +24,5 @@
     "preferred-install": "dist",
     "sort-packages": true,
     "optimize-autoloader": true
-  },
-  "repositories": [
-    {
-      "type": "git",
-      "url": "https://github.com/YunhanTech/laravel-db-doc.git"
-    },
-    {
-      "type": "git",
-      "url": "https://github.com/YunhanTech/swagger-lumen-yaml.git"
-    }
-  ]
+  }
 }
