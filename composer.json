@@ -20,6 +20,11 @@
     "yunhantech/laravel-db-doc": "^1.0",
     "yunhantech/swagger-lumen-yaml": "^1.0"
   },
+  "autoload": {
+    "psr-4": {
+      "YunhanDev\\": "src/"
+    }
+  },
   "config": {
     "preferred-install": "dist",
     "sort-packages": true,
