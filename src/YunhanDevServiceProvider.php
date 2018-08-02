@@ -4,6 +4,7 @@ namespace YunhanDev;
 
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\ServiceProvider;
+use Laravelista\LumenVendorPublish\VendorPublishCommand;
 
 class YunhanDevServiceProvider extends ServiceProvider
 {
@@ -14,6 +15,11 @@ class YunhanDevServiceProvider extends ServiceProvider
         $this->app->register(\YunhanTech\Swagger\SwaggerLumenServiceProvider::class);
         $this->app->register(\Jormin\DDoc\DDocServiceProvider::class);
         $this->app->register(\Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class);
+
+        // 添加命令
+        $this->commands(
+            VendorPublishCommand::class
+        );
     }
 
     private function setIdeHelperConfig()
