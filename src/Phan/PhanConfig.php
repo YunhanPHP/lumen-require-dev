@@ -65,10 +65,11 @@ class PhanConfig
         'vendor/symfony',
         'vendor/vlucas/phpdotenv',
         'vendor/yunhanphp/lumen-require-dev/src',
+        'vendor/yunhanphp/lumen-require/src',
     ];
 
     private static $exclude_analysis_directory_list = [
-        'vendor'
+        'vendor',
     ];
 
     public static function getConfig(array $configs = [])
