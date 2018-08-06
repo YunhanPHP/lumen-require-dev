@@ -21,5 +21,5 @@
 - doctrine/dbal: 用于`laravel-ide-helper`生成`model`时使用
 - laravelista/lumen-vendor-publish: 用于兼容命令 `php artisan vendor:publish`
 - phan/phan: 用于静态代码检测
-- yunhantech/laravel-db-doc: 用于查看数据库文档
-- yunhantech/swagger-lumen-yaml: 用于写接口文档和测试用例
+- yunhanphp/lumen-dev-db-doc: 用于查看数据库文档
+- yunhanphp/lumen-dev-yaml-swagger: 用于写接口文档和测试用例

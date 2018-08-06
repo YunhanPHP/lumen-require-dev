@@ -12,7 +12,7 @@ class YunhanDevServiceProvider extends ServiceProvider
     {
         $this->setIdeHelperConfig();
 
-        $this->app->register(\YunhanTech\Swagger\SwaggerLumenServiceProvider::class);
+        $this->app->register(\YunhanDev\Swagger\SwaggerLumenServiceProvider::class);
         $this->app->register(\Jormin\DDoc\DDocServiceProvider::class);
         $this->app->register(\Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class);
 
