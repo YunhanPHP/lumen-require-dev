@@ -51,7 +51,8 @@ class SuppressPlugin extends PluginV2 implements SuppressionCapability
             }
         } elseif (in_array($issueType, [
             'PhanUndeclaredStaticMethod',
-            'PhanAccessNonStaticToStatic'
+            'PhanAccessNonStaticToStatic',
+            'PhanUndeclaredMethod'
         ])) {
             $method = $this->getStaticMethodName();
             if (in_array($method, $config)) {
