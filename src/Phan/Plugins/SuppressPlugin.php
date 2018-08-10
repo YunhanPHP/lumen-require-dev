@@ -61,6 +61,13 @@ class SuppressPlugin extends PluginV2 implements SuppressionCapability
             }
         }
 
+        // 自定义方法
+        if (isset($suppress['custom'])
+            && is_callable($suppress['custom'])
+            && $suppress['custom']($issueType, $parameters)) {
+            return true;
+        }
+
 
         // $this->debug($issueType, $filename, $lineno, $suggestion, $parameters);
         return false;
