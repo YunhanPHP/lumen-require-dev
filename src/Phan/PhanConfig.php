@@ -64,6 +64,8 @@ class PhanConfig
         'vendor/psr/log',
         'vendor/symfony',
         'vendor/vlucas/phpdotenv',
+        'vendor/nesbot/carbon/src',
+        'vendor/guzzlehttp/guzzle/src',
         'vendor/yunhanphp/lumen-require-dev/src',
         'vendor/yunhanphp/lumen-require/src',
     ];
