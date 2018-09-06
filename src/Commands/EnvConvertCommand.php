@@ -40,7 +40,7 @@ class EnvConvertCommand extends Command {
                     $php .= "    // ${line}\n";
                 } elseif ($this->looksLikeSetter($line)) {
                     list($name, $value) = $this->normaliseEnvironmentVariable($line, null);
-                    $php .= "    '${name}'=>'${value}',\n";
+                    $php .= "    '${name}' => '${value}',\n";
                 }
             }
             $newFilename = base_path(trim($filename, '.') . '.php');
