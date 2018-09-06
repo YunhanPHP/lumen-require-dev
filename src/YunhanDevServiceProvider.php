@@ -5,6 +5,7 @@ namespace YunhanDev;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\ServiceProvider;
 use Laravelista\LumenVendorPublish\VendorPublishCommand;
+use YunhanDev\Commands\EnvConvertCommand;
 
 class YunhanDevServiceProvider extends ServiceProvider
 {
@@ -18,7 +19,8 @@ class YunhanDevServiceProvider extends ServiceProvider
 
         // 添加命令
         $this->commands(
-            VendorPublishCommand::class
+            VendorPublishCommand::class,
+            EnvConvertCommand::class
         );
     }
 
